@@ -1,0 +1,46 @@
+:root { 
+  @apply antialiased;
+  @apply bg-white;
+  @apply dark:bg-gray-900;
+  @apply text-gray-800;
+  @apply dark:text-white;
+}
+
+a {
+  @apply font-medium text-blue-600;
+}
+
+a:hover {
+  @apply text-blue-500 hover:text-blue-700;
+}
+
+body {
+  @apply m-0 min-h-screen bg-gray-100;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+button {
+  @apply rounded-md border border-transparent py-3 px-6 font-medium text-white bg-gray-900 hover:border-gray-600 focus:border-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900;
+}
+
+button:hover {
+  @apply hover:border-gray-500;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply text-gray-700;
+    @apply bg-white;
+  }
+  
+  a:hover {
+    @apply text-blue-700;
+  }
+  
+  button {
+    @apply bg-gray-100;
+  }
+}
